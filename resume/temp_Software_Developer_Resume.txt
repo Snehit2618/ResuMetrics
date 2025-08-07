@@ -1,0 +1,45 @@
+satish p
+john.doe@example.com | (123) 456-7890 | New York, NY
+[LinkedIn Profile] | [GitHub Profile]
+
+Professional Summary
+Passionate and skilled Software Developer with 4+ years of experience building scalable and high-quality web and mobile applications. Strong background in Python, JavaScript, and Java with hands-on experience in modern frameworks like React.js, Node.js, and Django. Adept at problem-solving, team collaboration, and delivering robust solutions in Agile environments.
+
+Technical Skills
+- Languages: Python, JavaScript, Java, C++
+- Frameworks/Libraries: React.js, Node.js, Django, Angular
+- Databases: MySQL, PostgreSQL, MongoDB
+- Tools/Platforms: Git, AWS, Docker, Kubernetes, CI/CD
+- Methodologies: Agile, DevOps
+- Others: RESTful APIs, Microservices Architecture, GitHub Actions
+
+Professional Experience
+Software Developer
+ABC Tech Solutions – New York, NY
+Jan 2021 – Present
+- Developed and maintained scalable web applications using Django and React.js.
+- Led integration of RESTful APIs and microservices for high-performance systems.
+- Collaborated with product managers and designers in Agile sprints to ship new features.
+- Implemented CI/CD pipelines and containerized apps using Docker and Kubernetes.
+- Utilized AWS for cloud deployments and data storage solutions.
+
+Junior Software Developer
+XYZ Innovations – Jersey City, NJ
+Aug 2018 – Dec 2020
+- Contributed to full-stack development using Node.js and Angular.
+- Wrote automated tests to improve code reliability and coverage.
+- Participated in code reviews and continuous integration workflows.
+- Maintained PostgreSQL and MongoDB databases with high data integrity.
+
+Education
+B.S. in Computer Science
+University of Technology – New York, NY
+Graduated: May 2018
+
+Certifications
+- AWS Certified Developer – Associate
+- Certified Kubernetes Application Developer (CKAD)
+
+Projects
+- TaskFlow App: A full-featured productivity web app using Django REST API and React.js.
+- DevOps Dashboard: Built a real-time CI/CD pipeline monitoring tool using Node.js and WebSockets.

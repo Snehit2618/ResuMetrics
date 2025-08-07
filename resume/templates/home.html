@@ -1,0 +1,237 @@
+{% comment %} <!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Resume Analyzer</title>
+    <style>
+        /* General reset and layout */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            background-image: url('{% static "img/img.png" %}');
+
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        /* Overlay to darken the background image */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+        }
+
+        /* Title styles */
+        h1 {
+            color: #e2ded2; /* Changed to a light orange color */
+            font-size: 50px;
+            font-weight: bold;
+            z-index: 1;
+            margin-bottom: 30px;
+        }
+
+        /* Button styles */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1;
+        }
+
+        button {
+            background-color: #9a7653 ; /* Changed to a green color */
+            color: white;
+            font-size: 18px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top:15px;
+        }
+
+        button:hover {
+            background-color: #78ad48 ; /* Darker green on hover */
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+            button {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    
+
+    <h1>Welcome to Resume Analyzer</h1>
+    <p>Welcome to the Resume Analyzer Tool! Our platform helps job seekers enhance their resumes to increase their chances of landing the perfect job. Whether you're an employee looking to improve your resume or a recruiter looking to streamline the hiring process, our tool is here to help!</p>
+
+<p>For Employees: You can upload your resume and get personalized feedback on areas such as skills, experience, and overall presentation. Our AI-powered analysis will suggest improvements to make your resume stand out to recruiters.</p>
+
+<p>For Recruiters: Our tool also allows you to analyze multiple resumes at once, compare candidates' qualifications, and predict how well they might fit a specific job role based on your criteria. Streamline your hiring process with automated resume evaluations and make informed decisions faster.</p>
+
+<p>Get started now and take the first step towards a better career or a more efficient hiring process!</p> 
+    <div class="button-container">
+        <button onclick="window.location.href='http://127.0.0.1:8000/home2/'">I'm a Recruiter</button>
+        <button onclick="window.location.href='http://127.0.0.1:8000/home1/'">I'm an Employee</button>
+    </div>
+</body>
+</html> {% endcomment %}
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Resume Analyzer</title>
+    <style>
+        
+        /* General reset and layout */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            background-image: url('{% static "img/img.png" %}');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            position: relative;
+            padding: 0 20px; /* Add some padding for better spacing on mobile */
+        }
+
+        /* Overlay to darken the background image */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+        }
+
+        /* Title styles */
+        h1 {
+            color: #e2ded2; /* Changed to a light orange color */
+            font-size: 50px;
+            font-weight: bold;
+            z-index: 1;
+            margin-bottom: 30px;
+        }
+
+        /* Paragraph styles */
+        p {
+            font-size: 12px; /* Smaller font size for paragraphs */
+            line-height: 1.4; /* Adjust line height for readability */
+            max-width: 800px; /* Limit the width of the paragraphs */
+            margin-bottom: 20px; /* Space between paragraphs */
+            z-index: 1;
+            text-align: justify; /* Make the text more aligned in a neat block */
+        }
+
+        /* Button styles */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1;
+        }
+
+        button {
+            background-color: #9a7653; /* Changed to a brown color */
+            color: white;
+            font-size: 18px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #78ad48; /* Darker green on hover */
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+            button {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+            p {
+                font-size: 10px; /* Make paragraph text even smaller on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="overlay"></div>
+
+    <h1>Welcome to Resume Analyzer</h1>
+    
+    <p>
+        Welcome to the Resume Analyzer Tool! Our platform helps job seekers enhance their resumes to increase their chances of landing the perfect job. Whether you're an employee looking to improve your resume or a recruiter looking to streamline the hiring process, our tool is here to help!
+    </p>
+
+    <p>
+        For Employees: You can upload your resume and get personalized feedback on areas such as skills, experience, and overall presentation. Our AI-powered analysis will suggest improvements to make your resume stand out to recruiters.
+    </p>
+
+    <p>
+        For Recruiters: Our tool also allows you to analyze multiple resumes at once, compare candidates' qualifications, and predict how well they might fit a specific job role based on your criteria. Streamline your hiring process with automated resume evaluations and make informed decisions faster.
+    </p>
+
+    <div class="button-container">
+        <button onclick="window.location.href='http://127.0.0.1:8000/home2/'">I'm a Recruiter</button>
+        <button onclick="window.location.href='http://127.0.0.1:8000/home1/'">I'm an Employee</button>
+    </div>
+</body>
+</html>
